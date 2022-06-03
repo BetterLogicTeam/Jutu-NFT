@@ -1,0 +1,139 @@
+
+
+.block-text h1.heading-bg {
+    font-size: 240px;
+    letter-spacing: 24px;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 100 !important;
+    left: 27px;
+    right: 0;
+    top: -40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: "Gilroy-Bold";
+    font-weight: bold;
+    line-height: 1.2;
+}
+.block-text h1.heading-bg span {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #4425ad;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    z-index: 100 !important;
+}
+.block-text .sub-title {
+    position: relative;
+    line-height: 3.2;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+h5, .h5 {
+    font-size: 24px;
+}
+.mt-61 {
+    margin-top: 61px;
+}
+.icon-box {
+    border-radius: 20px;
+    padding: 60px 27px 26px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.bg-2 {
+    background-color: #4526b1;
+}
+.icon-box .icon {
+    min-width: 90px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    transition: all 1s ease-in-out;
+}
+img, svg {
+    vertical-align: middle;
+}
+.icon-box .content p.fs-16 {
+    margin-bottom: 0;
+}
+
+.color-main {
+    color: #fd562a;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.icon-box .content a.h5 {
+    margin-bottom: 20px;
+}
+
+h5, .h5 {
+    font-size: 24px;
+}
+.fs-18 {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .block-text .sub_title_here::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0% !important;
+        width: 60px !important;
+        height: 5px;
+        background: #fd562a;
+       display: flex;
+       justify-content: center !important;
+       
+    }
+    .join_text{
+        font-size: 18px !important;
+    }
+    .Join_Bg_text {
+        font-size: 75px !important;
+        height: 50% !important;
+ 
+        z-index: 1 !important;
+        margin-top: 1rem !important;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px){
+.icon-box {
+    flex-wrap: wrap;
+    
+}
+.icon-box {
+    border-radius: 20px;
+    padding: 60px 27px 26px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.responsive_top{
+    margin-top: 5rem !important;
+}
+}

@@ -1,0 +1,147 @@
+
+.navbarmain{
+   padding:2rem;
+   
+}
+
+
+
+
+.btn-action {
+    padding: 11px 20px;
+    border: 2px solid #fd562a;
+    border-radius: 27px;
+    transition: color 0.4s linear;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    font-family: "Gilroy-Bold";
+  color: #fff;
+  text-decoration: none ;
+  font-size: 20px;
+    
+}   
+
+.btn-action:hover{
+  color: #fd562a;
+
+}
+
+.nav_icon{
+  color: #fff !important;
+  background-color: #fff;
+}
+ .menu-item {
+  color: #fff !important;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.nav-link:hover{
+  color: #fd562a;
+}
+
+ .main-nav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+   .main-nav .menu li {
+    position: relative;
+  }
+   .main-nav .menu li a {
+    position: relative;
+    display: block;
+  }
+   .main-nav .menu li a::before,  .main-nav .menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #fd562a;
+    transition: width 0.3s ease;
+  }
+   .main-nav .menu li a::before {
+    left: 0;
+  }
+   .main-nav .menu li a::after {
+    right: 0;
+  }
+   .main-nav .menu li a:hover::before,  .main-nav .menu li a:hover::after {
+    width: 50%;
+    transition: width 0.5s ease;
+  }
+   .main-nav .menu li .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: #4526b1;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translateY(35px);
+    -moz-transform: translateY(35px);
+    -ms-transform: translateY(35px);
+    -o-transform: translateY(35px);
+    transform: translateY(35px);
+    padding: 10px 0;
+  }
+   .main-nav .menu li .sub-menu li {
+    padding: 5px 20px;
+    position: relative;
+  }
+   .main-nav .menu li .sub-menu li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(69, 38, 177, 0.2);
+  }
+   .main-nav .menu li .sub-menu li:hover::before {
+    width: 100%;
+    transition: width 0.3s ease;
+  }
+   .main-nav .menu li .sub-menu li a::before,  .main-nav .menu li .sub-menu li a::after {
+    display: none;
+  }
+   .main-nav .menu li .sub-menu::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fd562a;
+  }
+   .main-nav .menu li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(26px);
+  }
+   .main-nav .menu li {
+    padding-right: 30px;
+  }
+   .main-nav .menu li:nth-last-child(1) {
+    padding-right: 30px;
+  }
+
+  @media screen and (max-width:1200px) {
+    .navbar-brand img{
+    width: 70%;
+ 
+    }
+    .navbar-brand{
+      width: 10rem;
+    }
+  
+  }

@@ -1,0 +1,89 @@
+
+
+#sub {
+    width: 60px;
+    height: 60px;
+    font-size: 3rem;
+    line-height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    background: transparent;
+    box-shadow: inset -2px -2px 2px rgb(255 255 255 / 20%), inset 2px 5px 15px rgb(0 0 0 / 50%);
+}
+#qtyBox {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 10px 0;
+    width: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0 10px;
+    background: transparent;
+    box-shadow: inset -2px -2px 2px rgb(255 255 255 / 20%), inset 2px 5px 15px rgb(0 0 0 / 50%);
+}
+#add {
+    width: 60px;
+    height: 60px;
+    font-size: 3rem;
+    line-height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    background: transparent;
+    box-shadow: inset -2px -2px 2px rgb(255 255 255 / 20%), inset 2px 5px 15px rgb(0 0 0 / 50%);
+}
+.btnallhere {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+}
+.mintbtn {
+    /* background-image: linear-gradient(90deg,rgb(189, 39, 197), rgb(11, 22, 149) ); */
+    background: linear-gradient(90deg,#380458,#640b6e)!important;
+    box-shadow: -3.828px -3.828px 6px 0 hsl(0deg 0% 100% / 40%), 3px 5px 8px 0 hsl(0deg 0% 100% / 20%);
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 25px;
+    color: #FFFFFF;
+    /* margin-left: 80px; */
+}
+.stakepageP {
+    font-weight: 700;
+}
+.mintboxsss {
+    background: #454545;
+    border-radius: 50px;
+    width: 100px;
+    height: 38px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+@media screen and (max-width:600px) {
+    .mintbtn {
+        /* background-image: linear-gradient(90deg,rgb(189, 39, 197), rgb(11, 22, 149) ); */
+        background: linear-gradient(90deg,#380458,#640b6e)!important;
+        box-shadow: -3.828px -3.828px 6px 0 hsl(0deg 0% 100% / 40%), 3px 5px 8px 0 hsl(0deg 0% 100% / 20%);
+        border-radius: 50px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px 25px;
+        color: #FFFFFF;
+        /* margin-left: 80px; */
+    }
+    .firstbtn{
+        margin-left: -0rem !important;
+    }
+}

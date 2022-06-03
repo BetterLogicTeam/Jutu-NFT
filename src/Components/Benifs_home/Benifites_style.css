@@ -1,0 +1,148 @@
+@media screen and (max-width:600px) {
+    .section-speciality {
+        margin-top: -10rem !important;
+    }
+}
+
+
+
+.block-text {
+    position: relative;
+}
+
+.pt-128 {
+    padding-top: 128px;
+}
+.block-text .sub-title {
+    position: relative;
+    line-height: 3.2;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+h5, .h5 {
+    font-size: 24px;
+}
+.section-speciality__box .box-item:nth-child(1) {
+    margin-top: -45px;
+}
+
+@media only screen and (max-width: 1200px){
+.box-item {
+    max-width: 48%;
+}
+}
+.box-item {
+    border-radius: 20px;
+    max-width: 270px;
+    width: 100%;
+    padding: 7px 12px 11px;
+    max-height: 362px;
+    cursor: pointer;
+}
+.bg-2 {
+    background-color: #4526b1;
+}
+.mr-28 {
+    margin-right: 28px;
+}
+.box-item p {
+    margin-top: 0px;
+    line-height: 1.7;
+    color: #fff;
+}
+@media only screen and (max-width: 1200px){
+.box-item {
+    max-width: 48%;
+}
+}
+
+.box-item {
+    border-radius: 20px;
+    max-width: 270px;
+    width: 100%;
+    padding: 7px 12px 11px;
+    max-height: 362px;
+    cursor: pointer;
+}
+.bg-2 {
+    background-color: #4526b1;
+}
+.mt-45 {
+    margin-top: 45px;
+}
+
+.section-speciality__box .box-item:nth-child(3) {
+    margin-top: -60px;
+}
+
+@media only screen and (max-width: 1200px){
+.box-item {
+    max-width: 48%;
+}}
+.box-item {
+    border-radius: 20px;
+    max-width: 270px;
+    width: 100%;
+    padding: 7px 12px 11px;
+    max-height: 362px;
+    cursor: pointer;
+}
+.bg-2 {
+    background-color: #4526b1;
+}
+.mr-28 {
+    margin-right: 28px;
+}
+.box-item {
+    border-radius: 20px;
+    max-width: 270px;
+    width: 100%;
+    padding: 7px 12px 11px;
+    max-height: 362px;
+    cursor: pointer;
+}
+
+.bg-2 {
+    background-color: #4526b1;
+}
+.mt-45 {
+    margin-top: 45px;
+}
+.mt-29 {
+    margin-top: 29px;
+}
+.section-speciality__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+h5, .h5 {
+    font-size: 24px;
+    text-decoration: none;
+}
+h5:hover{
+    color: #fd562a !important;
+}
+@media only screen and (max-width: 1200px){
+.section-speciality__box {
+    justify-content: center;
+    padding-top: 30px;
+}
+.section-speciality__box .box-item {
+    margin-right: 0 !important;
+    margin-top: 30px !important;
+    padding: 15px;
+}
+.box-item {
+    max-width: 100%;
+}
+
+}
+@media only screen and (max-width: 1024px){
+.section-speciality__box {
+    margin-top: 50px;
+}
+}

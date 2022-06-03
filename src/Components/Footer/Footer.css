@@ -1,0 +1,95 @@
+
+.footer .footer__body {
+    text-align: center;
+    padding-bottom: 120px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+footer .footer__body .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+}
+
+ul, li {
+    list-style-type: none;
+    margin-bottom: 0;
+}.footer .footer__body .social li {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #7153d9;
+    margin: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    color: #fff;
+}
+.footer .footer__body .social li::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 1;
+}
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
+}
+.fa-facebook-f:before, .fa-facebook:before {
+    content: "\f09a";
+}
+
+.footer .footer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 13px;
+}
+.footer .footer_bottom p {
+    margin-bottom: 0;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+.footer .footer_bottom ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ul, li {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+.footer .footer_bottom ul li a {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-family: "Gilroy-Bold";
+    display: inline-block;
+}
+.footer .footer_bottom ul li {
+    padding-left: 38px;
+}
+@media only screen and (max-width: 767px){
+.footer .footer_bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
