@@ -165,7 +165,7 @@ export default function Collection() {
                                             </div>
 
                                             <div class="collection-text home-2 text-center">
-                                                <a href="#">WHE NFT {items.num} </a>
+                                                <a href="#">JUTTO NFT {items.num} </a>
 
                                             </div>
                                         </div>
