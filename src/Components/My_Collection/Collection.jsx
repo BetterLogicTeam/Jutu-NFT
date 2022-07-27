@@ -121,7 +121,7 @@ export default function Collection() {
         allImagesNfts()
         getAccount();
 
-    }, [imageArray]);
+    }, []);
     return (
         <div>
 
