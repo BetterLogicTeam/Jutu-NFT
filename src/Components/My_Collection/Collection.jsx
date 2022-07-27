@@ -91,25 +91,28 @@ export default function Collection() {
             ttlPage = Math.ceil(ttlPage);
             setTotalPages(ttlPage)
             console.log("Total Pages", ttlPage);
-            if (parseInt(walletLength) > 0) {
-                {
-                    let myImgArry = []
-                    let myNameDate = []
-                    for (let i = 0; i < walletLength; i++) {
-                        try {
-                            let res = await axios.get(`https://gateway.pinata.cloud/ipfs/QmVfeNmNzjMyWcwnVMfdLLkNGswZnsqQ8ut7zDd1aD8rCY/${walletOfOwner[i]}.png`)
-                            // let res = await axios.get(`/config/${walletOfOwner[i]}.json`)
-                            let imageUrl = res.data.image;
-                            let dna = res.data.dna
-                            simplleArray = [...simplleArray, { imageUrl: imageUrl, num: dna }]
-                            setImageArray(simplleArray);
-                            console.log("Getting Response", res.data.image);
-                        } catch (e) {
-                            console.log("Error while Fetching Api", e)
-                        }
-                    }
+            // if (parseInt(walletLength) > 0) {
+            // {
+            let myImgArry = []
+            let myNameDate = []
+            for (let i = 0; i < walletLength; i++) {
+                try {
+                    console.log("imageUrl", i);
+
+                    let res = await axios.get(`https://juttonft.mypinata.cloud/ipfs/QmVfeNmNzjMyWcwnVMfdLLkNGswZnsqQ8ut7zDd1aD8rCY/${walletOfOwner[i]}.png`)
+                    // let res = await axios.get(`/config/${walletOfOwner[i]}.json`)
+                    console.log("imageUrl");
+                    let imageUrl = res.config.url;
+                    let dna = walletOfOwner[i]
+                    simplleArray = [...simplleArray, { imageUrl: imageUrl, num: dna }]
+                    setImageArray(simplleArray);
+                    console.log("Getting Response", res.data.image);
+                } catch (e) {
+                    console.log("Error while Fetching Api", e)
                 }
             }
+            // }
+            // }
         }
     }
 
@@ -117,8 +120,8 @@ export default function Collection() {
     useEffect(() => {
         allImagesNfts()
         getAccount();
-       
-    }, []);
+
+    }, [imageArray]);
     return (
         <div>
 
@@ -151,23 +154,35 @@ export default function Collection() {
 
                 <div class="container">
                     <div class="row mt-52">
-                        
-                    {
-                        imageArray.map((items,idex)=>{
-                            return(
-                                <div class="col-xl-4 col-md-6 fl-item">
-                            <div class="image-box" data-aos="fade-up" data-aos-duration="1000">
-                                <img src={items.imageUrl} alt="Wire Nft" />
-                                <div class="image-box__title">
-                                    <a href="collections.html" class="h6">Jutto Nft item 1</a>
-                                </div>
-                            </div>
-                        </div>
-                            )
-                        })
-                    }
-                    
-                    
+
+                        {
+                            imageArray.map((items, idex) => {
+                                return (
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="single-live-auction home-2">
+                                            <div class=" home-2">
+                                                <img src={items.imageUrl} alt="Image" width="100%" />
+                                            </div>
+
+                                            <div class="collection-text home-2 text-center">
+                                                <a href="#">WHE NFT {items.num} </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    // <div class="col-xl-4 col-md-6 fl-item">
+                                    //     <div class="image-box" data-aos="fade-up" data-aos-duration="1000">
+                                    //         <img src={items.imageUrl} alt="Wire Nft" />
+                                    //         <div class="image-box__title">
+                                    //             <a href="collections.html" class="h6">Jutto Nft item 1</a>
+                                    //         </div>
+                                    //     </div>
+                                    // </div>
+                                )
+                            })
+                        }
+
+
 
                     </div>
                 </div>

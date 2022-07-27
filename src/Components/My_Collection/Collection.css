@@ -5,3 +5,51 @@
 .mt-52 {
     margin-top: 52px;
 }
+
+.single-live-auction.home-2 {
+    padding: 0;
+    border-radius: 20px;
+}
+.single-live-auction {
+    background-color: #060826;
+    /* border-radius: 15px; */
+    /* padding: 20px 20px; */
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+.home-2 {
+    position: relative;
+    z-index: 1;
+    border-radius: 20px 20px 0 0;
+}
+.home-2 img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+/* img, svg {
+    vertical-align: middle;
+}
+img {
+    max-width: 110%;
+    height: auto;
+} */
+.text-center {
+    text-align: center!important;
+}
+
+.collection-text {
+    padding: 20px;
+}
+.home-2 {
+    position: relative;
+    z-index: 1;
+    border-radius: 20px 20px 0 0;
+}
+.collection-text a {
+    color: #fff;
+    font-size: 22px;
+    display: block;
+    text-decoration: none;
+}

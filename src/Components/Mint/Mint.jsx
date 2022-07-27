@@ -107,7 +107,7 @@ export default function Mint() {
                     })
 
 
-                    toast.error(" Please White Listed Address")
+                    toast.success("Transaction Confirmed")
                     setButtonOne("Mint With BNB")
 
 
